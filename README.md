@@ -2,10 +2,10 @@ First, get the working directory by running "getwd()" without quotations. If the
 Second, we get the list of files by securing a path into "directory" and placing the function list.files to display them.
 Third, we read the files needed to be used in this problem. To read the files, read.table function enclosed file.path function - which secured a path from the directory to the specific txt file - with the "false" value in header attribute. The step is repeated until all the needed data are read and placed into a data frame.
 Fourth, we proceed to the main objectives in solving the problem.
-A. To merge the training and the test sets into one dataset:
-= First, we bind the rows - using rbind function - according to the variables needed which are Features, Subject, and Activity.
-= Then, we assign the names of the variables accordingly. In case of the features, there is a text file which stored the appropriate names for its variables. Thus, read.table function enclosed file.path function - which secured a path from the directory to the specific txt file - with the "false" value in head attribute. After that, names for the variable are assigned to the Features dataset.
-= Lastly, we combine the individual dataset into a one dataset by using cbind function.
+    A. To merge the training and the test sets into one dataset:
+        = First, we bind the rows - using rbind function - according to the variables needed which are Features, Subject, and Activity.
+        = Then, we assign the names of the variables accordingly. In case of the features, there is a text file which stored the appropriate names for its variables. Thus, read.table function enclosed file.path function - which secured a path from the directory to the specific txt file - with the "false" value in head attribute. After that, names for the variable are assigned to the Features dataset.
+        = Lastly, we combine the individual dataset into a one dataset by using cbind function.
 
         tidyData is the name of the dataset.
 
